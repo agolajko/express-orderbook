@@ -1,0 +1,19 @@
+import express, { Express, Request, Response } from 'express';
+
+const app: Express = express();
+const port = 3000;
+
+app.get('/', (req: Request, res: Response) => {
+    res.send('Hello, World!');
+});
+
+app.post('/order', (req: Request, res: Response) => {
+
+
+
+    res.send('Order created!');
+});
+
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});

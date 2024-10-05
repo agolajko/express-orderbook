@@ -1,0 +1,7 @@
+#Dependencies
+/node_modules
+/db/migrations
+
+# Local env files
+.env*.local
+.env

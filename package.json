@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
