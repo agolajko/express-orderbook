@@ -5,6 +5,15 @@ export interface Order {
     id: number;
 }
 
+export function isValidOrder(order: any): order is Order {
+    return (
+        typeof order === 'object' &&
+        (order.order_type === 'buy' || order.order_type === 'sell') &&
+        typeof order.no_shares === 'number' &&
+        typeof order.price === 'number',
+        typeof order.id === 'number'
+    );
+}
 
 export interface Store {
     // [key: number]: { no_shares: number, price: number };
